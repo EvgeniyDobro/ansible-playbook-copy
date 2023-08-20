@@ -1,0 +1,6 @@
+- hosts: server
+  roles:
+    - copy
+  vars:
+    source_folder: ~/ansible-playbook/files
+    destin_file: /etc

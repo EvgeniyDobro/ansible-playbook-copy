@@ -1,0 +1,9 @@
+- name: copy files on servers
+  ansible.builtin.copy:
+    src: "{{source_folder}}/{{item}}"
+    dest: "{{destin_file}}"
+  loop:
+    - server-test.conf
+    - server-test2.conf
+    - server-test3.conf
+  become: yes
